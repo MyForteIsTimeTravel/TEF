@@ -3,10 +3,10 @@
  *  2017
  * * * * * * * * * * * * * * * * * * */
 (function () {
-    let expandedSize = 60;
     let shrunkSize = 10
     let anim = 0.5;
     
+    let musicExpSize = 70;
     let musicVids        = document.getElementById('one')
     var musicVidsExp     = false
     musicVids.addEventListener('click', function (e) { 
@@ -15,6 +15,7 @@
         requestAnimationFrame(expandMusicVideos);
     })
     
+    let corporateExpSize = 10
     let corporateVids    = document.getElementById('two')
     let corporateVidsExp = false
     corporateVids.addEventListener('click', function (e) { 
@@ -23,6 +24,7 @@
         requestAnimationFrame(expandCorporateVideos);
     })
     
+    let photographyExpSize = 60
     let photography      = document.getElementById('three')
     var photographyExp   = false;
     photography.addEventListener('click', function (e) {
@@ -39,7 +41,7 @@
     function expandMusicVideos () {
         if (musicVidsExp) { 
             expMusicContent();
-            musicVids.style.paddingBottom = expandedSize + 'em'; 
+            musicVids.style.paddingBottom = musicExpSize + 'em'; 
         }
         
         else if ((!musicVidsExp)) { 
@@ -51,7 +53,7 @@
     function expandCorporateVideos () {
         if (corporateVidsExp) { 
             expCorporateContent ();
-            corporateVids.style.paddingBottom = expandedSize + 'em'; 
+            corporateVids.style.paddingBottom = corporateExpSize + 'em'; 
         }
         
         else if ((!corporateVidsExp)) {
@@ -63,7 +65,7 @@
     function expandPhotography () {
         if (photographyExp) { 
             expPhotographyContent ();
-            photography.style.paddingBottom = expandedSize + 'em'; 
+            photography.style.paddingBottom = photographyExpSize + 'em'; 
         }
         else if ((!photographyExp)) { 
             introPhotographyContent ();
@@ -106,32 +108,47 @@
             musicVids.removeChild(musicVids.firstChild);
         }
                 
+        let article = document.createElement("article")
+        article.setAttribute("id", "oneText");
+        
         let videoOne = document.createElement("iframe")
-        videoOne.setAttribute("width", "47%")
+        videoOne.setAttribute("width", "100%")
         videoOne.setAttribute("height", "360")
-        videoOne.setAttribute("src", "https://www.youtube.com/embed/xaAYXoA9IYo")
+        videoOne.setAttribute("src", "https://www.youtube.com/embed/xaAYXoA9IYo?modestbranding=1&autohide=1&showinfo=0&controls=0")
         videoOne.setAttribute("frameborder", "0")
         videoOne.setAttribute("class", "musicVideo")
         
+        let titleOne = document.createElement("h1")
+        titleOne.innerHTML = "Title Of Video"
+        
         let descOne = document.createElement("p")
-    //    descOne.innerHTML = "this is a video. A video (or 'movie' if youre from the 40s) is a sequence of pictures flicked between at 60FPS to create the illusion of movement"
+        descOne.innerHTML = "A video is more than images. A video is magma, a video is lightning, a video is a crisp icy beer on a hot august evening"
         
         let videoTwo = document.createElement("iframe")
-        videoTwo.setAttribute("width", "47%")
+        videoTwo.setAttribute("width", "100%")
         videoTwo.setAttribute("height", "360")
-        videoTwo.setAttribute("src", "https://www.youtube.com/embed/-0K5eTMiD9E")
+        videoTwo.setAttribute("src", "https://www.youtube.com/embed/-0K5eTMiD9E?modestbranding=1&autohide=1&showinfo=0&controls=0")
         videoTwo.setAttribute("frameborder", "0")
         videoTwo.setAttribute("class", "musicVideo")
-    
-      //  let descTwo = document.createElement("p")
-        //descTwo.innerHTML = "this is a video. A video (or 'movie' if youre from the 40s) is a sequence of pictures flicked between at 60FPS to create the illusion of movement"
+        
+        let titleTwo = document.createElement("h1")
+        titleTwo.innerHTML = "Title Of Video"
+        
+        let descTwo = document.createElement("p")
+        descTwo.innerHTML = "A video is more than images. A video is magma, a video is lightning, a video is a crisp icy beer on a hot august evening"
         
         
-        musicVids.appendChild(videoOne)
-        //musicVids.appendChild(descOne)
+        article.appendChild(titleOne)
+        article.appendChild(document.createElement("div"))
+        article.appendChild(descOne)
+        article.appendChild(videoOne)
         
-        musicVids.appendChild(videoTwo)
-    //    musicvids.appendChild(descTwo)
+        article.appendChild(titleTwo)
+        article.appendChild(document.createElement("div"))
+        article.appendChild(descTwo)
+        article.appendChild(videoTwo)
+        
+        musicVids.appendChild(article)
     }
     
     function introCorporateContent () {
@@ -147,6 +164,7 @@
         article.appendChild(title)
 
         let line = document.createElement("div")
+        line.setAttribute("width", "120%")
         article.appendChild(line)
 
         let desc = document.createElement("p")
@@ -171,16 +189,16 @@
         let videoOne = document.createElement("iframe")
         videoOne.setAttribute("width", "47%")
         videoOne.setAttribute("height", "360")
-        videoOne.setAttribute("src", "https://www.youtube.com/embed/cMfOmnyYG7w")
+        videoOne.setAttribute("src", "https://www.youtube.com/embed/cMfOmnyYG7w?modestbranding=1&autohide=1&showinfo=0&controls=0")
         videoOne.setAttribute("frameborder", "0")
         videoOne.setAttribute("class", "corpVideo")
         
-       // let descOne = document.createElement("p")
-    //    descOne.innerHTML = "this is a video. A video (or 'movie' if youre from the 40s) is a sequence of pictures flicked between at 60FPS to create the illusion of movement"
+        let titleOne = document.createElement("h1")
+        titleOne.setAttribute("class", "twoText")
+        titleOne.innerHTML = "COMPANY NAME INC."
         
         corporateVids.appendChild(videoOne)
-        //musicVids.appendChild(descOne)
-
+        corporateVids.appendChild(titleOne)
     }
     
     function introPhotographyContent () {

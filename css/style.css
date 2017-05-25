@@ -81,11 +81,11 @@ footer {
     padding-bottom: 0.5em;
 }
 
-#navigation #logo {
+#navigation p {
     float:left;
-    padding-top: 0em;
+    padding-top: 0.2em;
     padding-left: 0.5em;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 .piece {
@@ -128,7 +128,6 @@ footer {
 
 .piece#hero h1 {
     font-size: 20em;
-    padding-bottom: 0em;
 }
 
 .piece#hero p {
@@ -261,19 +260,7 @@ a *:hover {
 }
 
 
-
-
-
-.musicVideo {
-    float: left;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 7.5em;
-}
-
-.corpVideo {
-    float: right;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 1em;
+iframe { 
+    margin-top: 1em;
+    margin-bottom: 4em;
 }
