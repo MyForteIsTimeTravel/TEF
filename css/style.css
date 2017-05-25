@@ -109,7 +109,7 @@ footer {
     background: url("/assets/hero.png");
     background-repeat: no-repeat;
     background-size: cover;
-        background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -127,7 +127,8 @@ footer {
 }
 
 .piece#hero h1 {
-    font-size: 4em;
+    font-size: 20em;
+    padding-bottom: 0em;
 }
 
 .piece#hero p {
@@ -257,4 +258,22 @@ a *:hover {
     animation: 0.2s linear light;
     cursor: pointer;
     color: #474747;
+}
+
+
+
+
+
+.musicVideo {
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 7.5em;
+}
+
+.corpVideo {
+    float: right;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1em;
 }
