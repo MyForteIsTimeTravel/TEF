@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: 	#FFFAF0;
+
+    list-style: none;
+    cursor:default;
+    
+    text-decoration: none;
+}
+
+body, html {
+    font-family: 'Questrial', sans-serif;
+  
+    background: #D55672;
+    background: #FF4365;
+    height: 100%;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    overflow: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 0.8em;
+    background: #262626;
+    bottom: 0;
+    margin-bottom: 0em;
+}
+
+.piece div {
+    padding: 0.05em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    background:	#FFFAF0;
+}
+
+#hero div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 28em;
+}
+
+#navigation {
+    background: rgba(38, 38, 38, 1);
+    padding-bottom: 0em;
+
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+#trim {
+    margin-top: 2em;
+    padding: 0.1em;
+    background: #FF4365;
+}
+
+#navigation h1 {
+    color: 	#FFFAF0;
+    font-size: 0.8em;
+}
+
+#navigation ul {
+    padding-top: 1em;
+}
+
+#navigation li {
+    float: right;
+}
+
+#navigation li a {
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+#navigation #logo {
+    float:left;
+    padding-top: 0em;
+    padding-left: 0.5em;
+    font-size: 2em;
+}
+
+.piece {
+    width: 100%;
+    
+    padding-top: 2em;
+    padding-bottom: 10em;
+
+    background: #646464;
+    text-align: center;
+
+    margin-bottom: 0.32em;
+}
+
+.piece#hero {
+    margin-top: 3em;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    
+    
+    background: url("/assets/hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+        background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#hero article {
+    
+    width: 32em;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(38, 38, 38, 0.95);
+    padding: 0em;
+}
+
+.piece#hero h1 {
+    font-size: 4em;
+}
+
+.piece#hero p {
+    font-size: 2em;
+}
+
+.piece#one {
+    background: url("/assets/one.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.piece #oneText {
+    width: 500px;
+    text-align: justify;
+
+    float: left;
+    padding-left: 10%;
+}
+
+.piece#two {
+    background: url("/assets/two.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.piece #twoText {
+    width: 500px;
+    text-align: justify;
+
+    float: right;
+    padding-right: 10%;
+}
+
+.piece#three {
+    background: url("/assets/three.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.piece #fourText {
+    width: 500px;
+    text-align: center;
+
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.piece#four {
+    background: #424242;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.piece #threeText {
+    width: 500px;
+    text-align: justify;
+
+    float: left;
+    padding-left: 10%;
+}
+
+#cv {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background: #373737;
+}
+
+#contact {
+   padding-top: 2em;
+   padding-bottom: 2em;
+    background: #262626;
+}
+
+i {
+    padding: 1em;
+    padding-top: 0.5em;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    border: 2px solid  	#FFFAF0;
+    margin-top: 0.75em;
+    
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.cvButton {
+    margin: 3em; 
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+@keyframes light { 0% { color: #FFFAF0; } 100% { color: #474747; } }
+@keyframes dark  { 0% { color: #474747; } 100% { color: #FFFAF0; } }
+
+button *:hover {
+    cursor: pointer;
+}
+
+a {
+    animation: 0.2s linear dark;
+    color: #FFFAF0;
+}
+
+a:hover {
+    animation: 0.2s linear light;
+    cursor: pointer;
+    color: #474747;
+}
+
+a *:hover {
+    animation: 0.2s linear light;
+    cursor: pointer;
+    color: #474747;
+}
