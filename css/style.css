@@ -106,7 +106,7 @@ footer {
     padding-bottom: 20%;
     
     
-    background: url("TEF/assets/hero.png");
+    background: url("/TEF/assets/hero.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
@@ -135,7 +135,7 @@ footer {
 }
 
 .piece#one {
-    background: url("TEF/assets/one.gif");
+    background: url("/TEF/assets/one.gif");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -152,7 +152,7 @@ footer {
 }
 
 .piece#two {
-    background: url("TEF/assets/two.png");
+    background: url("/TEF/assets/two.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -169,7 +169,7 @@ footer {
 }
 
 .piece#three {
-    background: url("TEF/assets/three.png");
+    background: url("/TEF/assets/three.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
